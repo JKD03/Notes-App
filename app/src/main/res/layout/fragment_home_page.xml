@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.Fragments.HomePage">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="553dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04">
+
+            <ImageView
+                android:id="@+id/allnotes"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/filter"></ImageView>
+
+            <TextView
+                android:id="@+id/filterLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_filter_shape"
+                android:paddingStart="18dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="10dp"
+                android:text="LOW"
+                android:textColor="#00FBAB"
+                android:textStyle="bold"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/filterMed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_filter_shape"
+                android:paddingStart="18dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="10dp"
+                android:text="MEDUIM"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/filterHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_filter_shape"
+                android:paddingStart="18dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="18dp"
+                android:paddingBottom="10dp"
+                android:text="HIGH"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:textSize="18sp"></TextView>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnaddnotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="26dp"
+            android:clickable="true"
+            android:src="@drawable/add"
+            android:theme="@style/ProgressBar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvallnotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.524" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

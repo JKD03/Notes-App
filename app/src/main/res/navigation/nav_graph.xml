@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.jkdprojects.j_notes.ui.Fragments.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_editNotes"
+            app:destination="@id/editNotes" />
+        <action
+            android:id="@+id/action_homePage_to_createNote"
+            app:destination="@id/createNote" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNote"
+        android:name="com.jkdprojects.j_notes.ui.Fragments.CreateNote"
+        android:label="fragment_create_note"
+        tools:layout="@layout/fragment_create_note" >
+        <action
+            android:id="@+id/action_createNote_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotes"
+        android:name="com.jkdprojects.j_notes.ui.Fragments.EditNotes"
+        android:label="fragment_edit_notes"
+        tools:layout="@layout/fragment_edit_notes" >
+        <action
+            android:id="@+id/action_editNotes_to_homePage"
+            app:destination="@id/homePage" />
+        <argument
+            android:name="data"
+            app:argType="com.jkdprojects.j_notes.Model.Notes" />
+    </fragment>
+</navigation>
