@@ -5,13 +5,13 @@ Notes app in Android Studio(Kotlin)
 [<img src="Images/Loading.jpg" width="200"/>](Images/Loading.jpg)
 
 # Editing of Note
-[<img src="Images/Editing" width="200"/>](Images/Editing.jpg)
+[<img src="Images/Editing.jpg" width="200"/>](Images/Editing.jpg)
 
 # Homescreen
 [<img src="Images/Homescreen.jpg" width="250"/>](Images/Homescreen.jpg)
 
-#Deleting note
+# Deleting note
 [<img src="Images/Delete.jpg" width="250"/>](Images/Delete.jpg)
 
-#Sorting note based on priority
+# Sorting note based on priority
 [<img src="Images/sorting.jpg" width="250"/>](Images/sorting.jpg)
